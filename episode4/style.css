@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.pulse {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	margin: 50px;
+	display: inline-block;
+}
+  
+.pulse::after, .pulse::before {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: #65AFFF;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+}
+  
+.pulse::after {
+	background: #335C81;
+	animation: fade 2s infinite linear;
+}
+
+.pulse::before {
+	animation: fade 2s infinite linear;
+	animation-delay: 0.5s;
+}
+  
+@keyframes fade {
+	0% {
+		transform: scale(1.1);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(0);
+	  	opacity: 1;
+	}
+}
+
+
+
+
