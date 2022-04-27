@@ -13,14 +13,6 @@ html, body {
 	font-family: 'Fredoka One', cursive;
 }
   
-.knobs, .layer {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-  
 .button {
 	position: relative;
 	width: 74px;
@@ -33,10 +25,6 @@ html, body {
 	border-radius: 100px;
 }
   
-.button.b2 {
-	border-radius: 2px;
-}
-  
 .checkbox {
 	position: relative;
 	width: 100%;
@@ -46,6 +34,14 @@ html, body {
 	opacity: 0;
 	cursor: pointer;
 	z-index: 3;
+}
+
+.knobs, .layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
   
 .knobs {
